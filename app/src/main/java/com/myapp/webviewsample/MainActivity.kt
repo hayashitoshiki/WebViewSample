@@ -5,7 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
-import com.myapp.webviewsample.ui.screen.HomeScreen
+import com.myapp.webviewsample.ui.WebViewSampleAppNavHost
 import com.myapp.webviewsample.ui.theme.WebViewSampleTheme
 
 class MainActivity : ComponentActivity() {
@@ -13,9 +13,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             WebViewSampleTheme {
-                // A surface container using the 'background' color from the theme
                 Surface(color = MaterialTheme.colors.background) {
-                    HomeScreen()
+                    WebViewSampleAppNavHost()
                 }
             }
         }
